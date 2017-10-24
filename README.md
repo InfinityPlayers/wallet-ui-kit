@@ -1,20 +1,21 @@
-Wallet Style Guide (UI-KIT)
+# Wallet Style Guide (UI-KIT)
 
-# First time
+## First time
 
-## Development
-### How do to install?
+### Development
+
+#### How do to install?
 
 1. Clone this project
 2. In terminal, use the command `npm install -g yo bower gulp gulp-cli generator-webapp`
 3. Run `yo gulp-webapp` and DON'T REPLACE this files
 4. Now you is ready! Run `gulp serve`
 
-### How do to build?
+#### How do to build?
 
 1. Run the command `gulp`
 
-### How do to install a dependency?
+#### How do to install a dependency?
 
 For install a dependency, use the _bower_.
 
