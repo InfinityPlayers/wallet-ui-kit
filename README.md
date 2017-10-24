@@ -8,7 +8,7 @@
 
 1. Clone this project
 2. In terminal, use the command `npm install -g yo bower gulp gulp-cli generator-webapp`
-3. Run `yo gulp-webapp` and DON'T REPLACE this files
+3. Run `yo gulp-webapp` and *DON'T OVERWRITE* the files that exists
 4. Now you is ready! Run `gulp serve`
 
 #### How do to build?
