@@ -1,0 +1,527 @@
+.btn {
+	// Box Model
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 3px;
+
+	// Typography
+	font-size: 16px;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+
+	// Visual
+	background-color: transparent;
+	transition: all .4s ease-out;
+	cursor: pointer;
+
+	&--x-small {
+		// Box Model
+		padding: 2.5px 10px;
+
+		// Typography
+		font-size: 12px;
+		
+	}
+
+	&--small {
+		// Box Model
+		padding: 5px 15px;
+
+		// Typography
+		font-size: 14px;
+		
+	}
+
+	&--large {
+		// Box Model
+		padding: 15px 40px;
+
+		// Typography
+		font-size: 18px;
+		
+	}
+
+	&--x-large {
+		// Box Model
+		padding: 20px 45px;
+
+		// Typography
+		font-size: 20px;
+
+	}
+
+	&--block {
+		// Box Model
+		display: block;
+		width: 100%;
+	}
+
+	&--rounded {
+		// Box Model
+		border-radius: 100px;
+	}
+
+	&--blue {
+		// Box Model
+		border: 1px solid $blue;
+
+		// Typography 
+		font-family: $gilroy;
+		color: #fff;
+
+		// Visual
+		background-color: $blue;
+
+		&:hover {
+			// Box Model
+			border-color: $blueHover;
+
+			// Visual
+			background-color: $blueHover;
+		}
+
+		&:focus {
+			// Box Model
+			border-color: $blueFocus;
+
+			// Typography
+			color: $blueDark;
+
+			// Visual
+			background-color: $blueFocus;	
+		}
+
+		&:disabled {
+			// Box Model
+			border-color: $grayLight;
+
+			// Visual
+			background-color: $grayLight;
+
+			&:hover {
+				// Box Model
+				border-color: $grayLight;
+
+				// Visual
+				background-color: $grayLight;				
+				cursor: not-allowed;
+			}
+		}
+	}
+
+	&--bluedark {
+		// Box Model
+		border: 1px solid $blueDark;
+
+		// Typography 
+		font-family: $gilroy;
+		color: #fff;
+
+		// Visual
+		background-color: $blueDark;
+
+		&:hover {
+			// Box Model
+			border-color: $blueDarkHover;
+			
+			// Visual
+			background-color: $blueDarkHover;
+		}
+
+		&:focus {
+			// Box Model
+			border-color: $blueDarkFocus;
+
+			// Typography
+			color: $blueDark;
+
+			// Visual
+			background-color: $blueDarkFocus;	
+		}
+
+		&:disabled {
+			// Box Model
+			border-color: $grayLight;
+
+			// Visual
+			background-color: $grayLight;
+
+			&:hover {
+				// Box Model
+				border-color: $grayLight;
+
+				// Visual
+				background-color: $grayLight;				
+				cursor: not-allowed;
+			}
+		}
+	}
+
+	&--blueghost {
+		// Box Model
+		border: 1px solid $blue;
+
+		// Typography 
+		font-family: $gilroy;
+		color: $blue;
+
+		// Visual
+		background-color: transparent;
+
+		&:hover {
+			// Box Model
+			border-color: $blueGhostHover;
+
+			// Typography
+			color: #fff;
+			
+			// Visual
+			background-color: $blueGhostHover;
+		}
+
+		&:focus {
+			// Box Model
+			border-color: $blueFocus;
+
+			// Typography
+			color: $blueDark;
+
+			// Visual
+			background-color: $blueFocus;
+		}
+
+		&:disabled {
+			// Box Model
+			border-color: $grayLight;
+
+			// Typography
+			color: $grayLight;
+
+			// Visual
+			background-color: transparent;
+			cursor: not-allowed;
+		}
+	}
+
+	&--green {
+		// Box Model
+		border: 1px solid $green;
+
+		// Typography 
+		font-family: $gilroy;
+		color: #fff;
+
+		// Visual
+		background-color: $green;
+
+		&:hover {
+			// Box Model
+			border-color: $greenHover;
+			
+			// Visual
+			background-color: $greenHover;
+		}
+
+		&:focus {
+			// Box Model
+			border-color: $greenFocus;
+
+			// Typography
+			color: $blueDark;
+
+			// Visual
+			background-color: $greenFocus;
+		}
+
+		&:disabled {
+			// Box Model
+			border-color: $grayLight;
+
+			// Visual
+			background-color: $grayLight;
+
+			&:hover {
+				// Box Model
+				border-color: $grayLight;
+
+				// Visual
+				background-color: $grayLight;				
+				cursor: not-allowed;
+			}
+		}
+	}
+
+	&--greenghost {
+		// Box Model
+		border: 1px solid $green;
+
+		// Typography 
+		font-family: $gilroy;
+		color: $green;
+
+		// Visual
+		background-color: transparent;
+
+		&:hover {
+			// Box Model
+			border-color: $greenGhostHover;
+
+			// Typography
+			color: #fff;
+			
+			// Visual
+			background-color: $greenGhostHover;
+		}
+
+		&:focus {
+			// Box Model
+			border-color: $greenFocus;
+
+			// Typography
+			color: $blueDark;
+
+			// Visual
+			background-color: $greenFocus;
+		}
+
+		&:disabled {
+			// Box Model
+			border-color: $grayLight;
+
+			// Typography
+			color: $grayLight;
+
+			// Visual
+			background-color: transparent;
+			cursor: not-allowed;
+		}
+	}
+
+	&--yellow {
+		// Box Model
+		border: 1px solid $yellow;
+
+		// Typography 
+		font-family: $gilroy;
+		color: #fff;
+
+		// Visual
+		background-color: $yellow;
+
+		&:hover {
+			// Box Model
+			border-color: $yellowHover;
+			
+			// Visual
+			background-color: $yellowHover;
+		}
+
+		&:disabled {
+			// Box Model
+			border-color: $grayLight;
+
+			// Visual
+			background-color: $grayLight;
+
+			&:hover {
+				// Box Model
+				border-color: $grayLight;
+
+				// Visual
+				background-color: $grayLight;				
+				cursor: not-allowed;
+			}
+		}
+	}
+
+	&--yellowghost {
+		// Box Model
+		border: 1px solid $yellow;
+
+		// Typography 
+		font-family: $gilroy;
+		color: $yellow;
+
+		// Visual
+		background-color: transparent;
+
+		&:hover {
+			// Box Model
+			border-color: $yellowHover;
+
+			// Typography
+			color: #fff;
+			
+			// Visual
+			background-color: $yellowHover;
+		}
+
+		&:disabled {
+			// Box Model
+			border-color: $grayLight;
+
+			// Typography
+			color: $grayLight;
+
+			// Visual
+			background-color: transparent;
+			cursor: not-allowed;
+		}
+	}
+
+	&--red {
+		// Box Model
+		border: 1px solid $red;
+
+		// Typography 
+		font-family: $gilroy;
+		color: #fff;
+
+		// Visual
+		background-color: $red;
+
+		&:hover {
+			// Box Model
+			border-color: $redHover;
+			
+			// Visual
+			background-color: $redHover;
+		}
+
+		&:disabled {
+			// Box Model
+			border-color: $grayLight;
+
+			// Visual
+			background-color: $grayLight;
+
+			&:hover {
+				// Box Model
+				border-color: $grayLight;
+
+				// Visual
+				background-color: $grayLight;				
+				cursor: not-allowed;
+			}
+		}
+	}
+
+	&--redghost {
+		// Box Model
+		border: 1px solid $red;
+
+		// Typography 
+		font-family: $gilroy;
+		color: $red;
+
+		// Visual
+		background-color: transparent;
+
+		&:hover {
+			// Box Model
+			border-color: $redHover;
+
+			// Typography
+			color: #fff;
+			
+			// Visual
+			background-color: $redHover;
+		}
+
+		&:disabled {
+			// Box Model
+			border-color: $grayLight;
+
+			// Typography
+			color: $grayLight;
+
+			// Visual
+			background-color: transparent;
+			cursor: not-allowed;
+		}
+	}
+
+	&__icon {
+		// Box Model
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-left: 10px;
+		border: 2px solid $grayDark;
+		border-radius: 30px;
+
+		// Typography
+		font-family: $gilroy;
+		font-size: 14px;
+		font-weight: 700;
+		color: $grayDark;
+		text-transform: uppercase;
+
+		&--light {
+			// Box Model
+			border-color: #fff;
+
+			// Typography
+			color: #fff;
+		}
+
+		&--dark {
+			// Box Model
+			border-color: $grayDark;
+
+			// Typography
+			color: $grayDark;
+		}
+
+		&:hover {
+			// Visual
+			animation: hoverScale .4s linear;
+		}
+	}
+}
+
+@keyframes iconLoading {
+
+	0% {
+		// Visual
+		transform: rotate(0deg) scale(1);
+		transform: rotate(0deg) scale3d(1, 1, 1);
+	}
+
+	100% {
+		// Visual
+		transform: rotate(360deg) scale(1);
+		transform: rotate(360deg) scale3d(1, 1, 1);
+	}
+}
+
+@keyframes hoverScale {
+
+	0% {
+		// Visual
+		transform: scale(1);
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		// Visual
+		transform: scale(0.85);
+		transform: scale3d(0.85, 0.85, 0.85);
+	}
+
+	90% {
+		// Visual
+		transform: scale(1.02);
+		transform: scale3d(1.02, 1.02, 1.02);
+	}
+
+	100% {
+		// Visual
+		transform: scale(1);
+		transform: scale3d(1, 1, 1);
+	}
+}

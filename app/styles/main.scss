@@ -1,0 +1,400 @@
+// bower:scss
+// endbower
+
+@import 'uikit';
+
+* {
+  // Box Model
+  box-sizing: border-box;
+
+  // Visual
+  outline: none;
+}
+
+body {
+  // Typography
+  font-family: $openSans;
+  
+  // Visual
+  overflow: hidden;
+}
+
+.doc {
+  // Box Model
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sidebar {
+  // Box Model
+  width: 330px;
+  height: 100vh;
+  padding: 0 20px 50px 20px;
+
+  // Typography
+  text-align: center;
+
+  // Visual
+  background-color: $blueDark;
+  overflow: auto;
+
+  .btn {
+    // Box Model
+    margin: 10px 0;
+  }
+}
+
+.logo {
+  // Box Model
+  width: 140px;
+  height: auto;
+  margin: 20px auto 50px auto;
+}
+
+.menu {
+  // Box Model
+  width: 100%;
+  margin: 0 0 100px 0;
+  padding: 0 20px;
+  list-style-type: none;
+
+  // Typography
+  text-align: left;
+
+  &__item {
+    // Box Model
+    margin-top: 20px;
+
+    // Typography
+    font-family: $gilroy;
+  }
+
+  &__anchor {
+    // Position
+    position: relative;
+
+    // Box Model
+    padding-right: 10px;
+    padding-left: 10px;
+
+    // Typography
+    color: #fff;
+    text-decoration: none;
+
+    &:before {
+      // Position
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      // Box Model
+      width: 2px;
+      height: 18px;
+
+      // Visual
+      background-color: #fff;
+      opacity: 0;
+      transition: all .2s ease-out;
+      content: '';
+    }
+
+    &:hover {
+
+      &:before {
+        // Visual
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.content {
+  // Box Model
+  width: calc(100vw - 330px);
+  height: 100vh;
+
+  // Visual
+  overflow: auto;
+}
+
+.section {
+  // Box Model
+  margin-bottom: 100px;
+
+  &:first-child {
+    // Box Model
+    padding-top: 0;
+    border-top: none;
+  }
+
+  &__block {
+    // Box Model
+    padding: 0 40px;
+  }
+
+  &__title {
+    // Typography
+    font-family: $gilroy;
+    font-size: 32px;
+  }
+
+  &__subtitle {
+    // Typography
+    font-family: $gilroy;
+    font-size: 18px;
+    color: $grayMedium;
+  }
+
+  &__header {
+    // Box Model
+    margin-bottom: 50px;
+    padding: 125px 40px 30px 40px;
+
+    // Visual
+    background-color: $blueSoft;
+  }
+
+  &__summary {
+    // Typography
+    font-family: $openSans;
+    font-size: 32px;
+    font-weight: 100;
+    color: $blue;
+  }
+}
+
+// Colors DOC
+.colors {
+  // Box Model
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &--primary {
+
+    .color {
+
+      &__item {
+        // Box Model
+        width: 200px;
+        height: 200px;
+
+        p {
+          // Typography
+          font-size: 18px;
+        }
+
+        &:nth-child(1) {
+          // Visual
+          background-color: $blue;
+        }
+
+        &:nth-child(2) {
+          // Visual
+          background-color: $blueMedium;
+        }
+
+        &:nth-child(3) {
+          // Visual
+          background-color: $blueDark;
+        }
+
+        &:nth-child(4) {
+          // Visual
+          background-color: $blueLight;
+        }
+
+        &:nth-child(5) {
+          // Visual
+          background-color: $blueGray;
+        }
+      }
+    }
+  }
+
+  &--secondary {
+
+    .color {
+
+      &__item {
+
+        &:nth-child(1) {
+          // Visual
+          background-color: $redDark;
+        }
+
+        &:nth-child(2) {
+          // Visual
+          background-color: $red;
+        }
+
+        &:nth-child(3) {
+          // Visual
+          background-color: $yellowDark;
+        }
+
+        &:nth-child(4) {
+          // Visual
+          background-color: $yellow;
+        }
+
+        &:nth-child(5) {
+          // Visual
+          background-color: $greenDark;
+        }
+
+        &:nth-child(6) {
+          // Visual
+          background-color: $green;
+        }
+
+        &:nth-child(7) {
+          // Visual
+          background-color: $grayDark;
+        }
+
+        &:nth-child(8) {
+          // Visual
+          background-color: $grayMedium;
+        }
+
+        &:nth-child(9) {
+          // Visual
+          background-color: $gray;
+        }
+
+        &:nth-child(10) {
+          // Visual
+          background-color: $grayLight;
+        }
+      }
+    }
+  }
+}
+
+.color {
+
+  &__item {
+    // Box Model
+    display: flex;
+    align-items: flex-end;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+
+    // Visual
+    transition: all .3s ease-out;
+    cursor: pointer;
+
+    p {
+      // Box Model
+      margin: 0;
+
+      // Typography
+      font-family: $gilroy;
+      font-size: 12px;
+      color: #fff;
+    }
+    
+    &:hover {
+      // Box Model
+      transform: scale(1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  }
+}
+
+.text {
+  // Box Model
+  padding-right: 30%;
+
+  // Typography
+  font-family: $openSans;
+  font-size: 14px;
+  color: $gray;
+  line-height: 1.6;
+
+  &__title {
+    // Typography
+    font-family: $openSans;
+    font-size: 24px;
+    font-weight: 700;
+    color: $blue;
+  }
+}
+
+.buttons {
+
+  &__group {
+    // Box Model
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    .btn {
+      margin: 5px;
+    }
+  }
+}
+
+.btn {
+
+  &__icon {
+    // Box Model
+    margin-top: 20px;
+  }
+}
+
+.alert {
+  // Position
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  // Box Model
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  // Typography
+  text-align: center;
+
+  &__title {
+    // Box Model
+    display: block;
+    width: 100%;
+    padding: 20px;
+
+    // Typography
+    font-family: $openSans;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+@keyframes bouce {
+
+  0% {
+    // Visual
+    transform: scale(1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    // Visual
+    transform: scale(0.75);
+    transform: scale3d(0.75, 0.75, 0.75);
+  }
+
+  100% {
+    // Visual
+    transform: scale(1);
+    transform: scale3d(1, 1, 1);
+  }
+}

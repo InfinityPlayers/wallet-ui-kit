@@ -1,0 +1,73 @@
+.icon {
+	// Box Model
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+
+	// Visual
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	&__flipper {
+		// Box Model
+		order: 2;
+		width: 32px;
+		height: 32px;
+		margin-right: 0;
+		margin-left: 5px;
+
+		// Visual
+		background-size: 32px 32px;
+
+		&--light {
+			background-image: url('../images/components/edc/icon-flipper.svg');
+		}
+
+		&--dark {
+			background-image: url('../images/components/edc/icon-flipper-dark.svg');
+		}
+	}
+
+	&--security {
+		// Box Model
+		width: 9px;
+		height: 13px;
+
+		// Visual
+		background-image: url('../images/components/buttons/icon-security.svg');
+		background-size: 9px 13px;
+	}
+
+	&--loading {
+		// Box Model
+		width: 15px;
+		height: 15px;
+
+		// Visual
+		background-image: url('../images/components/buttons/icon-loading.svg');
+		background-size: 15px 15px;
+		animation: iconLoading 1s linear infinite;
+	}
+
+	&--checked {
+		// Box Model
+		width: 20px;
+		height: 13px;
+
+		// Visual
+		background-image: url('../images/components/buttons/icon-checked.svg');
+		background-size: 20px 13px;
+	}
+
+	&--incomplete {
+		// Box Model
+		width: 15px;
+		height: 15px;
+
+		// Visual
+		background-image: url('../images/components/buttons/icon-incomplete.svg');
+		background-size: 15px 15px;
+	}
+}
